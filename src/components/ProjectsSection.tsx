@@ -74,7 +74,7 @@ export function ProjectsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-transparent text-clip-text">My Projects</span>
+            My <span className="bg-transparent text-primary">Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             A collection of projects I've built to solve real-world problems and explore new technologies.
@@ -95,9 +95,9 @@ export function ProjectsSection() {
               >
                 <FloatingCard delay={index * 0.1} className="h-full">
                   <div className="space-y-4">
-                    <div className="aspect-video bg-gradient-card rounded-lg flex items-center justify-center">
+                    { <div className="aspect-video bg-gradient-card rounded-lg flex items-center justify-center">
                       <div className="text-4xl opacity-20">🚀</div>
-                    </div>
+                    </div> }
                     
                     <div>
                       <h4 className="text-xl font-bold mb-2">{project.title}</h4>
