@@ -6,7 +6,7 @@ import { ContactSection } from '@/components/ContactSection'
 import ThreeBackground from '@/components/ThreeBackground'
 import { motion } from 'framer-motion'
 
-const Index = () => {
+export default function Portfolio() {
   return (
     <div className="min-h-screen relative">
       <ThreeBackground />
@@ -36,7 +36,5 @@ const Index = () => {
         </div>
       </motion.footer>
     </div>
-  );
-};
-
-export default Index;
+  )
+}

@@ -52,16 +52,25 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+				cosmic: {
+					purple: 'hsl(var(--cosmic-purple))',
+					blue: 'hsl(var(--cosmic-blue))',
+					pink: 'hsl(var(--cosmic-pink))',
+					cyan: 'hsl(var(--cosmic-cyan))'
 				}
+			},
+			backgroundImage: {
+				'gradient-cosmic': 'var(--gradient-cosmic)',
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-card': 'var(--gradient-card)'
+			},
+			boxShadow: {
+				'cosmic': 'var(--shadow-cosmic)',
+				'glow': 'var(--shadow-glow)',
+				'glass': 'var(--shadow-glass)'
+			},
+			backdropBlur: {
+				'cosmic': 'var(--backdrop-blur)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +93,34 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { 
+						transform: 'translateY(0px) rotateX(0deg) rotateY(0deg)' 
+					},
+					'50%': { 
+						transform: 'translateY(-20px) rotateX(5deg) rotateY(5deg)' 
+					}
+				},
+				'pulse-glow': {
+					'0%': { 
+						boxShadow: 'var(--shadow-glow)' 
+					},
+					'100%': { 
+						boxShadow: 'var(--shadow-glow), 0 0 60px hsl(var(--primary) / 0.8)' 
+					}
+				},
+				'rotate-slow': {
+					'0%': { transform: 'rotate(0deg)' },
+					'100%': { transform: 'rotate(360deg)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite alternate',
+				'rotate-slow': 'rotate-slow 20s linear infinite'
 			}
 		}
 	},
