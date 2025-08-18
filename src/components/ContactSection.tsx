@@ -94,7 +94,7 @@ export function ContactSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Get In <span className="bg-transparent text-clip-text">Touch</span>
+            Get <span className="bg-transparent text-primary">In Touch</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Have a project in mind or just want to chat? I'd love to hear from you.
