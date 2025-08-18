@@ -41,7 +41,7 @@ export function AboutSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            About <span className="gradient-transpsrent bg-transparent text-clip-text">Me</span>
+            About <span className="bg-transparent text-primary ">Me</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             I'm a passionate Data Scientist and aso have interest in Web Development with a love for creating innovative solutions. 
