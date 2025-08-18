@@ -38,7 +38,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-2xl font-bold gradient-cosmic bg-clip-text text-transparent"
+            className="text-2xl font-bold bg-transparent text-clip-text"
           >
             SP
           </motion.div>

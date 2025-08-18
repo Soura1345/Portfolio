@@ -89,7 +89,7 @@ export function HeroSection() {
               className="text-4xl md:text-6xl font-bold"
             >
               Hi, I'm{' '}
-              <span className="gradient-cosmic bg-clip-text text-transparent">
+              <span className="bg-transparent text-clip-text">
                 Sourashis
               </span>
             </motion.h1>

@@ -26,12 +26,15 @@ const Index = () => {
         viewport={{ once: true }}
         className="relative z-10 py-8 text-center glass backdrop-blur-xl border-t"
       >
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-5">
           <p className="text-muted-foreground">
-            © 2024 Sourashis Pal. Built with ❤️ using React, Three.js & Framer Motion.
+            Coding is not just a skill 👨‍💻
           </p>
           <p className="text-sm text-muted-foreground mt-2">
-            Designed & Developed with cosmic inspiration ✨
+            It's a power that ✨
+          </p>
+          <p className="text-sm text-muted-foreground mt-3">
+            Brings imagination to life...😉
           </p>
         </div>
       </motion.footer>

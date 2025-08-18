@@ -41,10 +41,10 @@ export function AboutSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            About <span className="gradient-cosmic bg-clip-text text-transparent">Me</span>
+            About <span className="gradient-transpsrent bg-transparent text-clip-text">Me</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            I'm a passionate full-stack developer with a love for creating innovative solutions. 
+            I'm a passionate Data Scientist and aso have interest in Web Development with a love for creating innovative solutions. 
             My journey in tech spans across web development, data science, and AI.
           </p>
         </motion.div>

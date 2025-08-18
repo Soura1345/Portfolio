@@ -12,14 +12,14 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'sourashis@example.com',
-    href: 'mailto:sourashis@example.com'
+    value: 'palsourashis04@gmail.com',
+    href: 'mailto:palsourashis04@gmail.com'
   },
   {
     icon: Phone,
     label: 'Phone',
-    value: '1234567890',
-    href: 'tel:1234567890'
+    value: '7872212032',
+    href: 'tel:7872212032'
   },
   {
     icon: MapPin,
@@ -39,7 +39,7 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/iamsourashis',
+    href: 'https://www.linkedin.com/in/iampalsourashis',
     color: 'hover:text-cosmic-blue'
   },
   {
@@ -94,7 +94,7 @@ export function ContactSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Get In <span className="gradient-cosmic bg-clip-text text-transparent">Touch</span>
+            Get In <span className="bg-transparent text-clip-text">Touch</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Have a project in mind or just want to chat? I'd love to hear from you.
