@@ -45,7 +45,7 @@ export function HeroSection() {
                 className="relative mx-auto w-48 h-48 rounded-full overflow-hidden shadow-glow"
               >
                 <img
-                  src="/lovable-uploads/f61e45fd-160e-45cb-a96f-28cdc89a3a13.png"
+                  src="/lovable-uploads/profile.png"
                   alt="Sourashis Pal Profile"
                   className="w-full h-full object-cover"
                 />
@@ -86,11 +86,11 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="text-4xl md:text-6xl font-bold"
+              className="text-4xl md:text-5xl font-bold"
             >
               Hi, I'm{' '}
-              <span className="bg-transparent text-clip-text">
-                Sourashis
+              <span className="bg-transparent text-primary font-extrabold">
+                Sourashis Pal
               </span>
             </motion.h1>
             
@@ -100,9 +100,9 @@ export function HeroSection() {
               transition={{ delay: 0.8 }}
               className="text-2xl md:text-3xl font-semibold text-muted-foreground"
             >
-              I'm a{' '}
+              I'm {' '}
               <TypingEffect
-                words={['Developer', 'Learner', 'Innovator', 'Problem Solver']}
+                words={['a Data Scientist', 'an Innovator', 'a Problem Solver']}
                 className="text-primary font-bold"
               />
             </motion.div>
@@ -114,7 +114,7 @@ export function HeroSection() {
               className="text-lg text-muted-foreground max-w-2xl"
             >
               A passionate developer who loves building impactful projects in Data Science, 
-              web development, AI, and open-source. Always learning, always creating.
+              Web Development, AI, and open-source. Always try to learn something unique.
             </motion.p>
           </div>
 
@@ -136,9 +136,12 @@ export function HeroSection() {
               variant="outline"
               size="lg"
               className="glass border-2 hover:shadow-glow transition-all duration-300"
+              asChild
             >
-              <Download className="mr-2 h-4 w-4" />
-              Download Resume
+                <a href="/lovable-uploads/Resume.pdf" download="Sourashis_Resume.pdf" className="flex items-center">
+                  <Download className="mr-2 h-4 w-4" />
+                  Resume
+                </a>
             </Button>
           </motion.div>
         </motion.div>
