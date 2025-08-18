@@ -32,15 +32,15 @@ export function Navigation() {
       transition={{ duration: 0.8, type: "spring" }}
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         scrolled ? 'glass backdrop-blur-xl' : ''
-      }`}
+      }`} 
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-2xl font-bold bg-transparent text-clip-text"
+            className="text-2xl font-bold bg-transparent text-primary"
           >
-            SP
+            <img src="/lovable-uploads/tab.png" alt="Logo" className="h-8 w-auto" />
           </motion.div>
 
           {/* Desktop Navigation */}
