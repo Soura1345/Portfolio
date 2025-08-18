@@ -26,14 +26,14 @@ const Index = () => {
         viewport={{ once: true }}
         className="relative z-10 py-8 text-center glass backdrop-blur-xl border-t"
       >
-        <div className="max-w-6xl mx-auto px-5">
+        <div className="max-w-6xl mx-auto px-4">
           <p className="text-muted-foreground">
             Coding is not just a skill 👨‍💻
           </p>
-          <p className="text-sm text-muted-foreground mt-2">
+          <p className="text-sm text-muted-foreground mt-1">
             It's a power that ✨
           </p>
-          <p className="text-sm text-muted-foreground mt-3">
+          <p className="text-sm text-muted-foreground mt-1">
             Brings imagination to life...😉
           </p>
         </div>
