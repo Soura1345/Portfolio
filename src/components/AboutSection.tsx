@@ -70,8 +70,64 @@ export function AboutSection() {
                   
                   <h3 className="text-xl font-semibold">{skill.category}</h3>
                   
-                  <div className="space-y-2">
-                    {skill.technologies.map((tech, techIndex) => (
+                  <div className="flex flex-wrap justify-center gap-3">
+                    {skill.technologies.map((tech, techIndex) =>
+                      tech === 'React' ? (
+                      <motion.img
+                        key={tech}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 + techIndex * 0.05 }}
+                        src="/lovable-uploads/react.png"
+                        alt="React"
+                        className="h-7 w-auto"
+                      />
+                      ) : tech === 'TypeScript' ? (
+                      <motion.img
+                        key={tech}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 + techIndex * 0.05 }}
+                        src="/lovable-uploads/TypeScript.png"
+                        alt="TypeScript"
+                        className="h-7 w-auto"
+                      />
+                      ) : tech === 'Next.js' ? (
+                      <motion.img
+                        key={tech}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 + techIndex * 0.05 }}
+                        src="/lovable-uploads/NextJS.png"
+                        alt="Next.js"
+                        className="h-7 w-auto"
+                      />
+                      ) : tech === 'Tailwind CSS' ? (
+                      <motion.img
+                        key={tech}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 + techIndex * 0.05 }}
+                        src="/lovable-uploads/TailwindCSS.png"
+                        alt="Tailwind CSS"
+                        className="h-10 w-auto"
+                      />
+                      ) : tech === 'Three.js' ? (
+                      <motion.img
+                        key={tech}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 + techIndex * 0.05 }}
+                        src="/lovable-uploads/ThreeJS.png"
+                        alt="Three.js"
+                        className="h-10 w-auto"
+                      />
+                      ) : (
                       <motion.div
                         key={tech}
                         initial={{ opacity: 0, x: -20 }}
@@ -82,7 +138,8 @@ export function AboutSection() {
                       >
                         {tech}
                       </motion.div>
-                    ))}
+                      )
+                    )}
                   </div>
                 </div>
               </FloatingCard>
