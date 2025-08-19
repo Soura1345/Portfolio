@@ -18,13 +18,13 @@ const skills = [
   {
     category: 'AI/ML',
     icon: Brain,
-    technologies: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'OpenAI', 'Pandas'],
+    technologies: ['TensorFlow', 'PyTorch', 'Numpy', 'OpenAI', 'Pandas'],
     color: 'text-cosmic-pink'
   },
   {
     category: 'Tools',
     icon: Zap,
-    technologies: ['Git', 'Docker', 'AWS', 'Figma', 'VS Code'],
+    technologies: ['Git', 'GitHub', 'AWS', 'Figma', 'VS Code'],
     color: 'text-cosmic-cyan'
   },
 ]
@@ -155,7 +155,7 @@ export function AboutSection() {
           transition={{ duration: 0.8 }}
         >
           <FloatingCard className="text-center">
-            <h3 className="text-2xl font-bold mb-6">My Journey</h3>
+            <h3 className="text-3xl font-bold mb-6">My Journey</h3>
             <div className="space-y-4 text-left max-w-2xl mx-auto">
               <div className="flex items-start space-x-4">
                 <div className="w-4 h-4 bg-gradient-cosmic rounded-full mt-1 shadow-glow" />
@@ -169,7 +169,7 @@ export function AboutSection() {
               <div className="flex items-start space-x-4">
                 <div className="w-4 h-4 bg-gradient-cosmic rounded-full mt-1 shadow-glow" />
                 <div>
-                  <h4 className="font-semibold">Open Source Contributor</h4>
+                  <h4 className="font-semibold">Data Scientist</h4>
                   <p className="text-muted-foreground text-sm">
                     Active contributor to various open-source projects and communities
                   </p>
@@ -178,7 +178,7 @@ export function AboutSection() {
               <div className="flex items-start space-x-4">
                 <div className="w-4 h-4 bg-gradient-cosmic rounded-full mt-1 shadow-glow" />
                 <div>
-                  <h4 className="font-semibold">Full-Stack Developer</h4>
+                  <h4 className="font-semibold">Web Developer</h4>
                   <p className="text-muted-foreground text-sm">
                     Building modern web applications with cutting-edge technologies
                   </p>
