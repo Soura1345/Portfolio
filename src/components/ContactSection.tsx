@@ -45,7 +45,7 @@ const socialLinks = [
   {
     icon: Instagram,
     label: 'Instagram',
-    href: 'https://www.instagram.com/nobi.07',
+    href: 'https://www.instagram.com/_nobi.07_',
     color: 'hover:text-cosmic-pink'
   }
 ]
