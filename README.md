@@ -1,18 +1,19 @@
-# Welcome to your Lovable project
+# It's My Portfolio
 
 ## Project info
+<div align="center">
+  
+### 👋 Hi...
 
-**URL**: https://lovable.dev/projects/59e020a0-dee3-42f5-b01d-8848ceaffae6
+### I'm Sourashis Pal, a passionate Data Scientist specializing in Python, TypeScript, Numpy, NextJs, ThreeJS etc. I build real-world     projects that solve problems or enhance experiences. Explore my repositories to see projects involving specific technologies, tools, or domains. Always excited to collaborate and learn new things. 
+</div>
+
+## Reach me
+LinkedIn : www.linkedin.com/in/iamsourashis
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/59e020a0-dee3-42f5-b01d-8848ceaffae6) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
 
 **Use your preferred IDE**
 
@@ -59,15 +60,3 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/59e020a0-dee3-42f5-b01d-8848ceaffae6) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
