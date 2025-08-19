@@ -138,7 +138,7 @@ export function HeroSection() {
               className="glass border-2 hover:shadow-glow transition-all duration-300"
               asChild
             >
-                <a href="/lovable-uploads/Resume.pdf" download="Sourashis_Resume.pdf" className="flex items-center">
+                <a href="/assets/Resume.pdf" download="Sourashis_Resume.pdf" className="flex items-center">
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </a>
