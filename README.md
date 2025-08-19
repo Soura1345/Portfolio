@@ -1,8 +1,12 @@
-# Welcome to your My Portfolio
+# It's My Portfolio
 
 ## Project info
+<div align="center">
+  
+### 👋 Hi...
 
-👋 Hi, I'm Sourashis Pal, a passionate Data Scientist specializing in Python, TypeScript, Numpy, NextJs, ThreeJS etc. I build real-world projects that solve problems or enhance experiences. Explore my repositories to see projects involving specific technologies, tools, or domains. Always excited to collaborate and learn new things. 
+### I'm Sourashis Pal, a passionate Data Scientist specializing in Python, TypeScript, Numpy, NextJs, ThreeJS etc. I build real-world     projects that solve problems or enhance experiences. Explore my repositories to see projects involving specific technologies, tools, or domains. Always excited to collaborate and learn new things. 
+</div>
 
 ## Reach me
 LinkedIn : www.linkedin.com/in/iamsourashis
