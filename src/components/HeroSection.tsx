@@ -140,7 +140,7 @@ export function HeroSection() {
             >
                 <a href="/lovable-uploads/Resume.pdf" download="Sourashis_Resume.pdf" className="flex items-center">
                   <Download className="mr-2 h-4 w-4" />
-                  Resume
+                  Download Resume
                 </a>
             </Button>
           </motion.div>
