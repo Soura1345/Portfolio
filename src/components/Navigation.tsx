@@ -49,7 +49,7 @@ export function Navigation() {
               {navItems.map((item, index) => (
                 <motion.a
                   key={item.name}
-                  href={item.href}
+                  href={item.name === 'Resume' ? '#home' : item.href}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 + 0.2 }}
