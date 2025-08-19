@@ -19,7 +19,7 @@ const socialLinks = [
   },
   { 
     icon: Instagram, 
-    href: 'https://www.instagram.com/nobi.07', 
+    href: 'https://www.instagram.com/_nobi.07_', 
     label: 'Instagram',
     color: 'hover:text-cosmic-pink'
   },
@@ -45,7 +45,7 @@ export function HeroSection() {
                 className="relative mx-auto w-48 h-48 rounded-full overflow-hidden shadow-glow"
               >
                 <img
-                  src="/lovable-uploads/profile.png"
+                  src="/assets/Profile.png"
                   alt="Sourashis Pal Profile"
                   className="w-full h-full object-cover"
                 />

@@ -40,7 +40,7 @@ export function Navigation() {
             whileHover={{ scale: 1.05 }}
             className="text-2xl font-bold bg-transparent text-primary"
           >
-            <img src="/lovable-uploads/tab.png" alt="Logo" className="h-8 w-auto" />
+            <img src="/assets/tab.png" alt="Logo" className="h-8 w-auto" />
           </motion.div>
 
           {/* Desktop Navigation */}

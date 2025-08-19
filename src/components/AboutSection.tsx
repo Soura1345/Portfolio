@@ -79,7 +79,7 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/lovable-uploads/React.png"
+                        src="/assets/React.png"
                         alt="React"
                         className="h-10 w-auto mx-auto"
                       />
@@ -90,7 +90,7 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/lovable-uploads/TypeScript.png"
+                        src="/assets/TypeScript.png"
                         alt="TypeScript"
                         className="h-9 w-auto mx-auto"
                       />
@@ -101,7 +101,7 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/lovable-uploads/NextJS.png"
+                        src="/assets/NextJS.png"
                         alt="Next.js"
                         className="h-10 w-auto mx-auto"
                       />
@@ -112,7 +112,7 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/lovable-uploads/TailwindCSS.png"
+                        src="/assets/TailwindCSS.png"
                         alt="Tailwind CSS"
                         className="h-10 w-auto mx-auto"
                       />
@@ -123,7 +123,7 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/lovable-uploads/ThreeJS.png"
+                        src="/assets/ThreeJS.png"
                         alt="Three.js"
                         className="h-12 w-auto mx-auto"
                       />
@@ -134,7 +134,7 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/lovable-uploads/NodeJS.png"
+                        src="/assets/NodeJS.png"
                         alt="Node.js"
                         className="h-10 w-auto mx-auto"
                       />
@@ -145,7 +145,7 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/lovable-uploads/Python.png"
+                        src="/assets/Python.png"
                         alt="Python"
                         className="h-10 w-auto mx-auto"
                       />
@@ -156,7 +156,7 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/lovable-uploads/Django.png"
+                        src="/assets/Django.png"
                         alt="Django"
                         className="h-10 w-auto mx-auto"
                       />
@@ -167,7 +167,7 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/lovable-uploads/MongoDB.png"
+                        src="/assets/MongoDB.png"
                         alt="MongoDB"
                         className="h-10 w-auto mx-auto"
                       />
@@ -178,7 +178,7 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/lovable-uploads/Anaconda.png"
+                        src="/assets/Anaconda.png"
                         alt="Anaconda"
                         className="h-10 w-auto mx-auto"
                       />
@@ -189,7 +189,7 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/lovable-uploads/TensorFlow.png"
+                        src="/assets/TensorFlow.png"
                         alt="TensorFlow"
                         className="h-10 w-auto mx-auto"
                       />
@@ -200,7 +200,7 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/lovable-uploads/PyTorch.png"
+                        src="/assets/PyTorch.png"
                         alt="PyTorch"
                         className="h-10 w-auto mx-auto"
                       />
@@ -211,7 +211,7 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/lovable-uploads/NumPy.png"
+                        src="/assets/NumPy.png"
                         alt="Numpy"
                         className="h-10 w-auto mx-auto"
                       />
@@ -222,7 +222,7 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/lovable-uploads/Pandas.png"
+                        src="/assets/Pandas.png"
                         alt="Pandas"
                         className="h-10 w-auto mx-auto"
                       />
@@ -233,7 +233,7 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/lovable-uploads/Git.png"
+                        src="/assets/Git.png"
                         alt="Git"
                         className="h-10 w-auto mx-auto"
                       />
@@ -244,7 +244,7 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/lovable-uploads/GitHub.png"
+                        src="/assets/GitHub.png"
                         alt="GitHub"
                         className="h-10 w-auto mx-auto"
                       />
@@ -255,7 +255,7 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/lovable-uploads/AWS.png"
+                        src="/assets/AWS.png"
                         alt="AWS"
                         className="h-10 w-auto mx-auto"
                       />
@@ -266,7 +266,7 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/lovable-uploads/VSCode.png"
+                        src="/assets/VSCode.png"
                         alt="VS_Code"
                         className="h-10 w-auto mx-auto"
                       />
@@ -277,7 +277,7 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/lovable-uploads/Canva.png"
+                        src="/assets/Canva.png"
                         alt="Canva"
                         className="h-10 w-auto mx-auto"
                       />
