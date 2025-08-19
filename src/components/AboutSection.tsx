@@ -12,19 +12,19 @@ const skills = [
   {
     category: 'Backend',
     icon: Database,
-    technologies: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB', 'Express'],
+    technologies: ['Node.js', 'Python', 'Django', 'MongoDB', 'Anaconda'],
     color: 'text-cosmic-purple'
   },
   {
     category: 'AI/ML',
     icon: Brain,
-    technologies: ['TensorFlow', 'PyTorch', 'Numpy', 'OpenAI', 'Pandas'],
+    technologies: ['TensorFlow', 'PyTorch', 'Numpy', 'Pandas'],
     color: 'text-cosmic-pink'
   },
   {
     category: 'Tools',
     icon: Zap,
-    technologies: ['Git', 'GitHub', 'AWS', 'Figma', 'VS Code'],
+    technologies: ['Git', 'GitHub', 'AWS', 'VS_Code', 'Canva'],
     color: 'text-cosmic-cyan'
   },
 ]
@@ -79,9 +79,9 @@ export function AboutSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/lovable-uploads/react.png"
+                        src="/lovable-uploads/React.png"
                         alt="React"
-                        className="h-7 w-auto"
+                        className="h-10 w-auto mx-auto"
                       />
                       ) : tech === 'TypeScript' ? (
                       <motion.img
@@ -92,7 +92,7 @@ export function AboutSection() {
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
                         src="/lovable-uploads/TypeScript.png"
                         alt="TypeScript"
-                        className="h-7 w-auto"
+                        className="h-9 w-auto mx-auto"
                       />
                       ) : tech === 'Next.js' ? (
                       <motion.img
@@ -103,7 +103,7 @@ export function AboutSection() {
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
                         src="/lovable-uploads/NextJS.png"
                         alt="Next.js"
-                        className="h-7 w-auto"
+                        className="h-10 w-auto mx-auto"
                       />
                       ) : tech === 'Tailwind CSS' ? (
                       <motion.img
@@ -114,7 +114,7 @@ export function AboutSection() {
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
                         src="/lovable-uploads/TailwindCSS.png"
                         alt="Tailwind CSS"
-                        className="h-10 w-auto"
+                        className="h-10 w-auto mx-auto"
                       />
                       ) : tech === 'Three.js' ? (
                       <motion.img
@@ -125,7 +125,161 @@ export function AboutSection() {
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
                         src="/lovable-uploads/ThreeJS.png"
                         alt="Three.js"
-                        className="h-10 w-auto"
+                        className="h-12 w-auto mx-auto"
+                      />
+                      ) : tech === 'Node.js' ? (
+                      <motion.img
+                        key={tech}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 + techIndex * 0.05 }}
+                        src="/lovable-uploads/NodeJS.png"
+                        alt="Node.js"
+                        className="h-10 w-auto mx-auto"
+                      />
+                      ) : tech === 'Python' ? (
+                      <motion.img
+                        key={tech}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 + techIndex * 0.05 }}
+                        src="/lovable-uploads/Python.png"
+                        alt="Python"
+                        className="h-10 w-auto mx-auto"
+                      />
+                      ) : tech === 'Django' ? (
+                      <motion.img
+                        key={tech}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 + techIndex * 0.05 }}
+                        src="/lovable-uploads/Django.png"
+                        alt="Django"
+                        className="h-10 w-auto mx-auto"
+                      />
+                      ) : tech === 'MongoDB' ? (
+                      <motion.img
+                        key={tech}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 + techIndex * 0.05 }}
+                        src="/lovable-uploads/MongoDB.png"
+                        alt="MongoDB"
+                        className="h-10 w-auto mx-auto"
+                      />
+                      ) : tech === 'Anaconda' ? (
+                      <motion.img
+                        key={tech}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 + techIndex * 0.05 }}
+                        src="/lovable-uploads/Anaconda.png"
+                        alt="Anaconda"
+                        className="h-10 w-auto mx-auto"
+                      />
+                      ) : tech === 'TensorFlow' ? (
+                      <motion.img
+                        key={tech}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 + techIndex * 0.05 }}
+                        src="/lovable-uploads/TensorFlow.png"
+                        alt="TensorFlow"
+                        className="h-10 w-auto mx-auto"
+                      />
+                      ) : tech === 'PyTorch' ? (
+                      <motion.img
+                        key={tech}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 + techIndex * 0.05 }}
+                        src="/lovable-uploads/PyTorch.png"
+                        alt="PyTorch"
+                        className="h-10 w-auto mx-auto"
+                      />
+                      ) : tech === 'Numpy' ? (
+                      <motion.img
+                        key={tech}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 + techIndex * 0.05 }}
+                        src="/lovable-uploads/NumPy.png"
+                        alt="Numpy"
+                        className="h-10 w-auto mx-auto"
+                      />
+                      ) : tech === 'Pandas' ? (
+                      <motion.img
+                        key={tech}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 + techIndex * 0.05 }}
+                        src="/lovable-uploads/Pandas.png"
+                        alt="Pandas"
+                        className="h-10 w-auto mx-auto"
+                      />
+                      ) : tech === 'Git' ? (
+                      <motion.img
+                        key={tech}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 + techIndex * 0.05 }}
+                        src="/lovable-uploads/Git.png"
+                        alt="Git"
+                        className="h-10 w-auto mx-auto"
+                      />
+                      ) : tech === 'GitHub' ? (
+                      <motion.img
+                        key={tech}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 + techIndex * 0.05 }}
+                        src="/lovable-uploads/GitHub.png"
+                        alt="GitHub"
+                        className="h-10 w-auto mx-auto"
+                      />
+                      ) : tech === 'AWS' ? (
+                      <motion.img
+                        key={tech}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 + techIndex * 0.05 }}
+                        src="/lovable-uploads/AWS.png"
+                        alt="AWS"
+                        className="h-10 w-auto mx-auto"
+                      />
+                      ) : tech === 'VS_Code' ? (
+                      <motion.img
+                        key={tech}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 + techIndex * 0.05 }}
+                        src="/lovable-uploads/VSCode.png"
+                        alt="VS_Code"
+                        className="h-10 w-auto mx-auto"
+                      />
+                      ) : tech === 'Canva' ? (
+                      <motion.img
+                        key={tech}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 + techIndex * 0.05 }}
+                        src="/lovable-uploads/Canva.png"
+                        alt="Canva"
+                        className="h-10 w-auto mx-auto"
                       />
                       ) : (
                       <motion.div
