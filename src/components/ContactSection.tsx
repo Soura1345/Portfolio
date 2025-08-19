@@ -39,7 +39,7 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/iampalsourashis',
+    href: 'https://www.linkedin.com/in/iamsourashis',
     color: 'hover:text-cosmic-blue'
   },
   {
