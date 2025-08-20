@@ -44,7 +44,7 @@ export function AboutSection() {
             About <span className="bg-transparent text-primary ">Me</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            I'm a passionate Data Scientist and aso have interest in Web Development with a love for creating innovative solutions. 
+            I'm a passionate Data Scientist and also have interest in Web Development with a love for creating innovative solutions. 
             My journey in tech spans across web development, data science, and AI.
           </p>
         </motion.div>
