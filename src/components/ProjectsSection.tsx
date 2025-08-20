@@ -22,25 +22,25 @@ const featuredProjects = [
     description: "Interactive 3D portfolio built with React Three Fiber featuring cosmic themes and smooth animations.",
     technologies: ["React", "Three.js", "Framer Motion", "TypeScript"],
     github: "https://github.com/Soura1345/portfolio",
-    demo: "https://sourashispal.dev",
-    image: "/api/placeholder/400/300"
-  },
-  {
-    title: "AI Data Analytics Dashboard",
-    description: "Real-time data visualization dashboard with machine learning insights and predictive analytics.",
-    technologies: ["Python", "TensorFlow", "React", "D3.js"],
-    github: "https://github.com/Soura1345/ai-dashboard",
-    demo: "https://ai-dashboard-demo.com",
-    image: "/api/placeholder/400/300"
-  },
-  {
-    title: "Open Source CLI Tool",
-    description: "Command-line utility for developers to streamline workflow and automate repetitive tasks.",
-    technologies: ["Node.js", "TypeScript", "Commander.js", "Chalk"],
-    github: "https://github.com/Soura1345/dev-cli",
-    demo: "https://npmjs.com/package/dev-cli-tool",
-    image: "/api/placeholder/400/300"
+    // demo: "https://sourashispal.dev",
+    image: "/assets/DP.png"
   }
+  // {
+  //   title: "AI Data Analytics Dashboard",
+  //   description: "Real-time data visualization dashboard with machine learning insights and predictive analytics.",
+  //   technologies: ["Python", "TensorFlow", "React", "D3.js"],
+  //   github: "https://github.com/Soura1345/ai-dashboard",
+  //   demo: "https://ai-dashboard-demo.com",
+  //   image: "/api/placeholder/400/300"
+  // },
+  // {
+  //   title: "Open Source CLI Tool",
+  //   description: "Command-line utility for developers to streamline workflow and automate repetitive tasks.",
+  //   technologies: ["Node.js", "TypeScript", "Commander.js", "Chalk"],
+  //   github: "https://github.com/Soura1345/dev-cli",
+  //   demo: "https://npmjs.com/package/dev-cli-tool",
+  //   image: "/api/placeholder/400/300"
+  // }
 ]
 
 export function ProjectsSection() {
@@ -84,7 +84,7 @@ export function ProjectsSection() {
         {/* Featured Projects */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold mb-8 text-center">Featured Projects</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center justify-items-center ml-50%">
             {featuredProjects.map((project, index) => (
               <motion.div
                 key={project.title}
@@ -93,10 +93,12 @@ export function ProjectsSection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <FloatingCard delay={index * 0.1} className="h-full">
+                <FloatingCard delay={index * 0.1} className="h-full items-center">
                   <div className="space-y-4">
-                    { <div className="aspect-video bg-gradient-card rounded-lg flex items-center justify-center">
-                      <div className="text-4xl opacity-20">🚀</div>
+                    { <div className="aspect-video bg-transparent rounded-lg">
+                        <div className="text-4xl">
+                          <img src={project.image} alt={project.title} className="rounded-lg object-cover w-full h-full" />
+                        </div>
                     </div> }
                     
                     <div>
@@ -127,7 +129,7 @@ export function ProjectsSection() {
                           Code
                         </a>
                       </Button>
-                      <Button
+                      {/* <Button
                         size="sm"
                         className="gradient-cosmic text-white border-0 flex-1"
                         asChild
@@ -136,7 +138,7 @@ export function ProjectsSection() {
                           <ExternalLink className="mr-2 h-4 w-4" />
                           Live Demo
                         </a>
-                      </Button>
+                      </Button> */}
                     </div>
                   </div>
                 </FloatingCard>

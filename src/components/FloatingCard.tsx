@@ -10,7 +10,7 @@ interface FloatingCardProps {
 export function FloatingCard({ children, className = "", delay = 0 }: FloatingCardProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50, rotateX: -15 }}
+      initial={{ opacity: 0, y: 50, rotateX: 15 }}
       animate={{ opacity: 1, y: 0, rotateX: 0 }}
       transition={{ 
         duration: 1, 
