@@ -64,16 +64,39 @@ export function ContactSection() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000))
+    try {
+      // Build mailto link to open user's email client with prefilled fields.
+      const recipient = 'palsourashis04@gmail.com'
+      const subject = encodeURIComponent(formData.subject || 'Contact from portfolio')
+      const bodyLines = [
+        `Name: ${formData.name}`,
+        `Email: ${formData.email}`,
+        '',
+        formData.message
+      ]
+      const body = encodeURIComponent(bodyLines.join('\n'))
+      const mailto = `mailto:${recipient}?subject=${subject}&body=${body}`
 
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for your message. I'll get back to you soon!",
-    })
+      if (typeof window !== 'undefined') {
+        // Open user's default mail client with the composed message.
+        window.location.href = mailto
+      }
 
-    setFormData({ name: '', email: '', subject: '', message: '' })
-    setIsSubmitting(false)
+      toast({
+        title: 'Email client opened',
+        description: "Your message was placed into your email client. Please send it to complete delivery.",
+      })
+
+      // Reset form
+      setFormData({ name: '', email: '', subject: '', message: '' })
+    } catch (err) {
+      toast({
+        title: 'Could not prepare email',
+        description: 'Something went wrong while preparing the email. Please try again.',
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
