@@ -24,7 +24,7 @@ const skills = [
   {
     category: 'Tools',
     icon: Zap,
-    technologies: ['Git', 'GitHub', 'AWS', 'VS_Code', 'Canva'],
+    technologies: ['Git', 'GitHub', 'AWS', 'Vite', 'Canva'],
     color: 'text-cosmic-cyan'
   },
 ]
@@ -259,15 +259,15 @@ export function AboutSection() {
                         alt="AWS"
                         className="h-10 w-auto mx-auto"
                       />
-                      ) : tech === 'VS_Code' ? (
+                      ) : tech === 'Vite' ? (
                       <motion.img
                         key={tech}
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + techIndex * 0.05 }}
-                        src="/assets/VSCode.png"
-                        alt="VS_Code"
+                        src="/assets/Vite.png"
+                        alt="Vite"
                         className="h-10 w-auto mx-auto"
                       />
                       ) : tech === 'Canva' ? (
