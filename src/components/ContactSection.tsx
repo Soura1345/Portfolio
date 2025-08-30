@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Instagram } from 'lucide-react'
+import { Mail, Phone, Send, Github, Linkedin, Instagram } from 'lucide-react'
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { useToast } from '@/hooks/use-toast'
@@ -22,12 +22,6 @@ const contactInfo = [
     value: '7872212032',
     href: 'tel:7872212032'
   },
-  {
-    icon: MapPin,
-    label: 'Location',
-    value: 'India',
-    href: '#'
-  }
 ]
 
 const socialLinks = [
