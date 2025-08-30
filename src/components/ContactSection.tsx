@@ -6,6 +6,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Instagram } from 'lucide-react'
 import { useState } from 'react'
+import emailjs from '@emailjs/browser'
 import { useToast } from '@/hooks/use-toast'
 
 const contactInfo = [
@@ -63,36 +64,36 @@ export function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+      to_email: 'palsourashis04@gmail.com'
+    }
 
     try {
-      // Build mailto link to open user's email client with prefilled fields.
-      const recipient = 'palsourashis04@gmail.com'
-      const subject = encodeURIComponent(formData.subject || 'Contact from portfolio')
-      const bodyLines = [
-        `Name: ${formData.name}`,
-        `Email: ${formData.email}`,
-        '',
-        formData.message
-      ]
-      const body = encodeURIComponent(bodyLines.join('\n'))
-      const mailto = `mailto:${recipient}?subject=${subject}&body=${body}`
-
-      if (typeof window !== 'undefined') {
-        // Open user's default mail client with the composed message.
-        window.location.href = mailto
+      if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+        throw new Error('EmailJS keys are not set. Make sure VITE_EMAILJS_* env vars are configured.')
       }
 
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
+
       toast({
-        title: 'Email client opened',
-        description: "Your message was placed into your email client. Please send it to complete delivery.",
+        title: 'Message Sent',
+        description: "Thanks — I'll get back to you soon!",
       })
 
-      // Reset form
       setFormData({ name: '', email: '', subject: '', message: '' })
     } catch (err) {
+      console.error('EmailJS error', err)
       toast({
-        title: 'Could not prepare email',
-        description: 'Something went wrong while preparing the email. Please try again.',
+        title: 'Send failed',
+        description: 'Could not send message. Please try again or use your mail client.',
       })
     } finally {
       setIsSubmitting(false)
