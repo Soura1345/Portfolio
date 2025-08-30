@@ -73,6 +73,8 @@ export function ContactSection() {
       from_email: formData.email,
       subject: formData.subject,
       message: formData.message,
+      // Ensure replies go to the user's provided email address
+      reply_to: formData.email,
       to_email: 'palsourashis04@gmail.com'
     }
 
