@@ -202,7 +202,7 @@ export function ContactSection() {
                   ) : (
                     <Send className="mr-2 h-4 w-4" />
                   )}
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                  {isSubmitting ? 'Sending...' : 'Send Mail'}
                 </Button>
               </form>
             </FloatingCard>
